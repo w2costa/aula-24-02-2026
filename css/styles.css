@@ -11,6 +11,7 @@
     --cor-primaria: #f6f6f6;
     --cor-secundaria: black;
     --cor-terciaria: #22D4FD;
+    --cor-hover: #62909b;
     --fonte-primaria: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Krona One', sans-serif;
 }
@@ -86,6 +87,18 @@ body {
     text-align: center;
 }
 
+/* .apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    cursor: pointer;
+} */
+
+
+.apresentacao__imagem {
+    width: 40%;
+}
+
+
 .rodape {
     height: 80px;
     line-height: 80px;
@@ -96,3 +109,26 @@ body {
     color: var(--cor-secundaria);
 }
 
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 80px;
+    }
+
+    .apresentacao__imagem {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .apresentacao__imagem {
+        width: 80%;
+        padding: 10%;
+    }
+
+}
